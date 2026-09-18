@@ -30,7 +30,7 @@ export default function Footer() {
       <div className="mx-auto grid max-w-[1150px] gap-12 px-4 py-14 md:grid-cols-3">
         <div>
           <Image
-            src="/images/logo.png"
+            src="/Images/logo.png"
             alt="Budhanilkantha School logo"
             width={52}
             height={52}

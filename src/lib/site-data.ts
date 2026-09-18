@@ -90,7 +90,7 @@ export const introduction = {
     "After much planning and forethought, Budhanilkantha School came into existence in 1972. As a joint venture between the Government of the United Kingdom and the Government of Nepal, the Nepali government provided the required land and the British government provided all the technical and financial assistance.",
     "Teaching st...",
   ],
-  image: "/images/academic-block.jpg",
+  image: "/Images/about.png",
   imageAlt: "Academic block at Budhanilkantha School",
   href: "/about/introduction",
 };
@@ -101,7 +101,7 @@ export const latestNews = [
     publishedOn: "2082-08-23",
     excerpt:
       "Budhanilkantha School (BNKS) invites electronic bids from eligible bidders for the construction of East Side Boundary Wall with V-Drain, Toe Wall and Landscaping, Main Gate and Guard Post (Package-C \u201c1st Phase\u201d) under National Competitive Bidding \u2013 Single Stage Two Envelope Bidding procedures.",
-    image: "/images/notice-bids.jpg",
+    image: "/Images/announcement.jpg",
     href: "/notice/tender",
   },
   {
@@ -109,7 +109,7 @@ export const latestNews = [
     publishedOn: "2083-05-10",
     excerpt:
       "Due to the tragic situation resulting from the recent flooding, the Graduation Ceremony for 7000E Batch, originally scheduled for Sunday, 14 Bhadra 2083 (30 August 2026), has been postponed until further notice. The revised date will be communicated to students and parents at a later time.",
-    image: "/images/notice-graduation.jpg",
+    image: "/Images/notice-graduation.jpg",
     href: "/notice/general",
   },
 ];
@@ -117,7 +117,7 @@ export const latestNews = [
 export const ourEvents = [
   {
     title: "Natural Panorama",
-    image: "/images/natural-panorama.jpg",
+    image: "/Images/events.jpg",
     href: "/gallery/photos",
   },
 ];

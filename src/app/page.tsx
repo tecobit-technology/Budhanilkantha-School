@@ -1,9 +1,9 @@
-import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
-import Introduction from "@/components/Introduction";
-import NewsAndEvents from "@/components/NewsAndEvents";
-import NoticeTicker from "@/components/NoticeTicker";
-import StayConnected from "@/components/StayConnected";
+import Footer from "@/components/HomePage/Footer";
+import Hero from "@/components/HomePage/Hero";
+import Introduction from "@/components/HomePage/Introduction";
+import NewsAndEvents from "@/components/HomePage/NewsAndEvents";
+import NoticeTicker from "@/components/HomePage/NoticeTicker";
+import StayConnected from "@/components/HomePage/StayConnected";
 
 export default function HomePage() {
   return (

@@ -20,18 +20,15 @@ export default function Navbar() {
 
   return (
     <header className="relative z-20">
-      {/* Main Navbar */}
-      <div className="mx-auto mt-4 flex max-w-[1200px] items-center justify-between px-4 py-4">
-        {/* Logo */}
+      <div className="mx-auto flex max-w-[1200px] items-center justify-between px-4 py-4">
         <Link href="/" className="flex items-center gap-3">
           <Image
-            src="/Images/logo.png"
+            src="/images/logo.png"
             alt="Budhanilkantha School logo"
             width={56}
             height={56}
             className="h-14 w-14 rounded-sm bg-white/90 p-1"
           />
-
           <span className="font-script text-[34px] leading-[0.85] text-white">
             Budhanilkantha
             <br />
@@ -53,11 +50,9 @@ export default function Navbar() {
                 className="flex items-center gap-1 py-3 text-[15px] font-semibold text-white transition-opacity hover:opacity-75"
               >
                 {item.label}
-
                 {item.children && <Chevron />}
               </Link>
 
-              {/* Desktop dropdown */}
               {item.children && openMenu === item.label && (
                 <div className="absolute left-0 top-full min-w-[230px] rounded-sm bg-white py-2 shadow-xl">
                   {item.children.map((child) => (
@@ -83,11 +78,7 @@ export default function Navbar() {
           onClick={() => setMobileOpen((v) => !v)}
           className="flex h-10 w-10 items-center justify-center rounded-sm border border-white/50 text-white xl:hidden"
         >
-          <svg
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            className="h-5 w-5"
-          >
+          <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
             {mobileOpen ? (
               <path d="M18.3 5.7 12 12l6.3 6.3-1.4 1.4L10.6 13.4l-6.3 6.3-1.4-1.4L9.2 12 2.9 5.7l1.4-1.4 6.3 6.3 6.3-6.3z" />
             ) : (
@@ -110,15 +101,12 @@ export default function Navbar() {
                 >
                   {item.label}
                 </Link>
-
                 {item.children && (
                   <button
                     type="button"
                     aria-label={`Toggle ${item.label} submenu`}
                     onClick={() =>
-                      setMobileSub((s) =>
-                        s === item.label ? null : item.label
-                      )
+                      setMobileSub((s) => (s === item.label ? null : item.label))
                     }
                     className="px-4 py-3 text-[#1c2340]"
                   >
@@ -126,8 +114,6 @@ export default function Navbar() {
                   </button>
                 )}
               </div>
-
-              {/* Mobile submenu */}
               {item.children && mobileSub === item.label && (
                 <div className="bg-[#fafafa] pb-2">
                   {item.children.map((child) => (

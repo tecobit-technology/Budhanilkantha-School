@@ -20,7 +20,7 @@ export const navItems: NavItem[] = [
   { label: "Home", href: "/" },
   {
     label: "About Us",
-    href: "/about",
+    href: "/about-us",
     children: [
       { label: "Introduction", href: "/about/introduction" },
       { label: "Message from Principal", href: "/about/principal" },
@@ -133,7 +133,7 @@ export const embeds = {
 
 export const footerLinks = [
   { label: "Home", href: "/" },
-  { label: "About Us", href: "/about" },
+  { label: "About Us", href: "/about-us" },
   { label: "Academics", href: "/academics" },
   { label: "Notice", href: "/notice" },
   { label: "Bhangyang ( Annual Magazine )", href: "/bhanjyang" },

@@ -116,7 +116,7 @@ export const latestNews = [
     publishedOn: "2083-05-10",
     excerpt:
       "Due to the tragic situation resulting from the recent flooding, the Graduation Ceremony for 7000E Batch, originally scheduled for Sunday, 14 Bhadra 2083 (30 August 2026), has been postponed until further notice. The revised date will be communicated to students and parents at a later time.",
-    image: "/Images/notice-graduation.jpg",
+    image: "/Images/announcement.jpg",
     href: "/notice/general",
   },
 ];
@@ -124,8 +124,8 @@ export const latestNews = [
 export const ourEvents = [
   {
     title: "Natural Panorama",
-    image: "/images/natural-panorama.jpg",
-    href: "/gallery/photos",
+    image: "/Images/events.jpg",
+    href: "/About-Us/History",
   },
 ];
 

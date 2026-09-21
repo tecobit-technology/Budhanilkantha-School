@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function AcademicsBreadcrumb({
+export default function ContactBreadcrumb({
   trail,
 }: {
   trail: { label: string; href?: string }[];

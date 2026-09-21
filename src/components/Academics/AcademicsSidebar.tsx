@@ -1,4 +1,5 @@
 import Link from "next/link";
+<<<<<<< HEAD
 
 export const ACADEMICS_DEPARTMENT_NAV_PAGES = [
   { label: "Nepali Department", href: "/academics/nepali-department" },
@@ -16,6 +17,9 @@ export const ACADEMICS_DEPARTMENT_NAV_PAGES = [
   { label: "Computer Science Department", href: "/academics/computer-science-department" },
   { label: "Art Department", href: "/academics/art-department" },
 ];
+=======
+import { departments } from "@/lib/academics-data";
+>>>>>>> f238de886d48e20a38f258baef05dd59a0ab26bf
 
 export default function AcademicsSidebar({ active }: { active: string }) {
   return (
@@ -23,6 +27,7 @@ export default function AcademicsSidebar({ active }: { active: string }) {
       <h2 className="text-[17px] font-semibold text-[#16253d] mb-4">
         Academics
       </h2>
+<<<<<<< HEAD
       <div className="flex flex-col gap-2">
         {ACADEMICS_DEPARTMENT_NAV_PAGES.map((p) => {
           const isActive = p.label === active;
@@ -37,10 +42,30 @@ export default function AcademicsSidebar({ active }: { active: string }) {
               }`}
             >
               {p.label}
+=======
+      <div className="flex flex-col">
+        {departments.map((d) => {
+          const isActive = d.slug === active;
+          return (
+            <Link
+              key={d.slug}
+              href={`/academics/${d.slug}`}
+              className={`block px-5 py-3 text-[14px] border transition-colors ${
+                isActive
+                  ? "border-[#2f9e44] bg-[#2f9e44] text-white font-medium"
+                  : "border-neutral-200 text-neutral-700 hover:border-[#2f9e44] hover:text-[#2f9e44]"
+              }`}
+            >
+              {d.label}
+>>>>>>> f238de886d48e20a38f258baef05dd59a0ab26bf
             </Link>
           );
         })}
       </div>
     </div>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f238de886d48e20a38f258baef05dd59a0ab26bf

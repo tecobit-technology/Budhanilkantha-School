@@ -1,3 +1,5 @@
+import { departments } from "@/lib/academics-data";
+
 export const contact = {
   phones: [
     { label: "Reception", number: "015971520" },
@@ -40,13 +42,10 @@ export const navItems: NavItem[] = [
   {
     label: "Academics",
     href: "/academics",
-    children: [
-      { label: "Curriculum", href: "/academics/curriculum" },
-      { label: "Admission", href: "/academics/admission" },
-      { label: "Scholarships", href: "/academics/scholarships" },
-      { label: "Examination", href: "/academics/examination" },
-      { label: "Results", href: "/academics/results" },
-    ],
+    children: departments.map((d) => ({
+      label: d.label,
+      href: `/academics/${d.slug}`,
+    })),
   },
   {
     label: "Notice",

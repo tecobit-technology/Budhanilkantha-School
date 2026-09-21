@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const SCHOOL_PROFILE_NAV_PAGES = [
+export const SCHOOL_MANAGEMENT_COMMITTEE_NAV_PAGES = [
   { label: "History", href: "/about-us/history" },
   { label: "School Profile", href: "/about-us/school-profile" },
   { label: "Board Of Trustees (BOT)", href: "/about-us/board-of-trustees" },
@@ -16,14 +16,18 @@ const SCHOOL_PROFILE_NAV_PAGES = [
   { label: "SEBS (Alumni)", href: "/about-us/sebs" },
 ];
 
-export default function SchoolProfileSidebar({ active }: { active: string }) {
+export default function SchoolManagementCommitteeSidebar({
+  active,
+}: {
+  active: string;
+}) {
   return (
     <div>
       <h2 className="text-[17px] font-semibold text-[#16253d] mb-4">
         About Us
       </h2>
       <div className="flex flex-col gap-2">
-        {SCHOOL_PROFILE_NAV_PAGES.map((p) => {
+        {SCHOOL_MANAGEMENT_COMMITTEE_NAV_PAGES.map((p) => {
           const isActive = p.label === active;
           return (
             <Link

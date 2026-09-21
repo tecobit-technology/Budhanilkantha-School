@@ -19,7 +19,7 @@ export default function SchoolManagementCommittee() {
       title="School Management Committee (SMC)"
       active="School Management Committee"
     >
-      <div className="space-y-5 text-[15px] leading-[1.9] text-neutral-700">
+      <div className="space-y-5 text-[15px] leading-[1.9] text-neutral-700 text-justify">
         <p>
           The School Management Committee (SMC) is responsible for making,
           administering and monitoring the policies and programmes. SMC is

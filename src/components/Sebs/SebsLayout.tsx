@@ -1,6 +1,7 @@
 import Navbar from "@/components/HomePage/Navbar";
 import Footer from "@/components/HomePage/Footer";
-import SebsBreadcrumb from "@/components/Sebs/SebsBreadCrumb";
+import Topbar from "@/components/HomePage/TopBar";
+import SebsBreadcrumb from "@/components/Sebs/SebsBreadCumb";
 import SebsSidebar from "@/components/Sebs/SebsSidebar";
 
 export default function SebsLayout({
@@ -18,14 +19,18 @@ export default function SebsLayout({
 }) {
   return (
     <>
-      <Navbar />
-
-      <div
-        className="h-[280px] bg-cover bg-center"
-        style={{
-          backgroundImage: "url('https://picsum.photos/seed/bnks-hero/1600/900')",
-        }}
-      />
+      <section className="relative isolate min-h-[300px]">
+              <div
+                className="absolute inset-0 -z-10 bg-cover bg-center"
+                style={{
+                  backgroundImage: "url('/Images/hero.jpg')",
+                }}
+              />
+              <div className="absolute inset-0 -z-10 bg-black/40" />
+              <Topbar />
+              <Navbar />
+            </section>
+      
 
       <SebsBreadcrumb
         trail={[
@@ -36,7 +41,7 @@ export default function SebsLayout({
       />
 
       <main className="bg-white">
-        <div className="max-w-[1280px] mx-auto px-6 py-14 grid md:grid-cols-[1fr_320px] gap-12 items-start">
+        <div className="max-w-[1040px] mx-auto px-4 py-14 grid md:grid-cols-[1fr_280px] gap-x-24 gap-y-10 items-start">
           <div>
             <h1 className="text-[28px] font-semibold text-[#2f9e44] mb-6">
               {title}

@@ -19,7 +19,7 @@ const EXECUTIVE_COMMITTEE = [
 export default function Fobs() {
   return (
     <FobsLayout title="FOBS (Parents’ Body)" crumbLabel="FOBS" active="FOBS (Parents' Body)">
-      <div className="space-y-5 text-[15px] leading-[1.9] text-neutral-700">
+      <div className="space-y-5 text-[15px] leading-[1.9] text-neutral-700 text-justify">
         <p>
           Friends of Budhanilkantha School (FOBS) is the association of
           parents and guardians of the students of Budhanilkantha School.

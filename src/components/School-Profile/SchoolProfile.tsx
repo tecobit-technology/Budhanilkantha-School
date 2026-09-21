@@ -1,4 +1,3 @@
-import Image from "next/image";
 import SchoolProfileLayout from "./SchoolProfileLayout";
 
 const SUBJECT_COMBINATIONS = [
@@ -28,12 +27,22 @@ const BOARD_OF_COUNSELORS = [
 
 export default function SchoolProfile() {
   return (
-    <SchoolProfileLayout title="School Profile" active="School Profile">
+    <SchoolProfileLayout
+      title="School Profile"
+      active="School Profile"
+    >
+      {/* Page Section Title */}
+      <div className="text-[15px] font-semibold text-[#16253d] pt-2 mb-6 text-center underline decoration-black decoration-1 underline-offset-4">
+        <p>School Profile</p>
+      </div>
 
-      <div className="space-y-5 text-[15px] leading-[1.9] text-neutral-700">
-        <h2 className="text-[18px] font-semibold text-[#16253d] pt-2">
+      {/* School Profile Content */}
+      <div className="space-y-5 text-[13px] leading-[1.7] text-neutral-700 text-justify">
+        {/* General */}
+        <h2 className="text-[15px] font-semibold text-[#16253d] pt-2">
           General
         </h2>
+
         <p>
           Nepal, the land of the legendary Yeti, the birth place of Lord
           Buddha and home to the highest mountain of the world &ndash; Mt.
@@ -45,6 +54,7 @@ export default function SchoolProfile() {
           joint cooperation of the Government of Nepal and the Government
           of the United Kingdom (UK).
         </p>
+
         <p>
           In the first two decades of its operation, the school was headed
           by a succession of British Headmasters who did an excellent job
@@ -55,6 +65,7 @@ export default function SchoolProfile() {
           faculty is 81 and the support staff is 165, with a student
           faculty ratio of almost 14:1.
         </p>
+
         <p>
           The School is managed under the Public Trust, the main Trustee
           being the Ministry of Education. The Board of Trustees (BOT) and
@@ -65,6 +76,7 @@ export default function SchoolProfile() {
           School (FOBS) are the two organizations that keenly take
           interest in the welfare of the school.
         </p>
+
         <p>
           Currently there are 1123 students, of which 42% are girls.
           Students are selected from a wide range of socio-economic,
@@ -74,9 +86,11 @@ export default function SchoolProfile() {
           backgrounds, and from all the seventy-seven districts of Nepal.
         </p>
 
-        <h2 className="text-[18px] font-semibold text-[#16253d] pt-2">
+        {/* Courses */}
+        <h2 className="text-[15px] font-semibold text-[#16253d] pt-2">
           Courses of Study at Budhanilkantha School
         </h2>
+
         <p>
           Budhanilkantha School follows the National Curriculum of Nepal
           from Grade 5 to 10. The main entry of the students takes place
@@ -89,14 +103,18 @@ export default function SchoolProfile() {
           Education, Additional Mathematics or Geography, and Computer
           Science or Accounts &amp; Office Management.
         </p>
+
         <p>
           After the SEE, selected students from inside as well as outside
           Budhanilkantha School can take either of the two courses:
         </p>
 
-        <h2 className="text-[18px] font-semibold text-[#16253d] pt-2">
-          1. Grades 11 &amp; 12 (Science) of National Education Board (NEB), Nepal
+        {/* NEB */}
+        <h2 className="text-[15px] font-semibold text-[#16253d] pt-2">
+          1. Grades 11 &amp; 12 (Science) of National Education Board (NEB),
+          Nepal
         </h2>
+
         <p>
           It is a two-year course in which students study English,
           Nepali, Mathematics, Physics and Chemistry as compulsory
@@ -106,23 +124,30 @@ export default function SchoolProfile() {
           pass every subject with at least Grade C.
         </p>
 
-        <h2 className="text-[18px] font-semibold text-[#16253d] pt-2">
+        {/* Cambridge */}
+        <h2 className="text-[15px] font-semibold text-[#16253d] pt-2">
           2. General Certificate of Education (GCE) of Cambridge Assessment
           International Education (CAIE), the University of Cambridge, UK
         </h2>
+
         <p>
           This is also a two-year course. English Language (AS Level) and
           Mathematics are compulsory for all students. In addition, each
           student takes one of the following subject combinations:
         </p>
+
         <ul className="space-y-2">
-          {SUBJECT_COMBINATIONS.map((c) => (
-            <li key={c} className="flex items-start gap-3">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#2f9e44] mt-2.5 shrink-0" />
-              <span>{c}</span>
+          {SUBJECT_COMBINATIONS.map((combination) => (
+            <li
+              key={combination}
+              className="flex items-start gap-3"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#2f9e44] mt-2 shrink-0" />
+              <span>{combination}</span>
             </li>
           ))}
         </ul>
+
         <p>
           Apart from these officially offered combinations of subjects,
           students are free to appear privately in any one or more extra
@@ -132,6 +157,7 @@ export default function SchoolProfile() {
           pass at least 3 A-Level subjects and AS Level English Language
           or English General Paper (EGP).
         </p>
+
         <p>
           Budhanilkantha School operates on a semester system. In the
           first year, students sit for two school examinations: Mid-Year
@@ -144,9 +170,11 @@ export default function SchoolProfile() {
           are published in August of the same year.
         </p>
 
-        <h2 className="text-[18px] font-semibold text-[#16253d] pt-2">
+        {/* Leadership */}
+        <h2 className="text-[15px] font-semibold text-[#16253d] pt-2">
           Leadership, Responsibilities and Co-Curricular Program
         </h2>
+
         <p>
           Budhanilkantha School aims to provide all-round education to
           its students through a wide range of sporting and numerous
@@ -156,31 +184,42 @@ export default function SchoolProfile() {
           in and outside the school. Students also hold various
           leadership positions in the areas defined below:
         </p>
+
         <ul className="space-y-2">
-          {LEADERSHIP_AREAS.map((l) => (
-            <li key={l} className="flex items-start gap-3">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#2f9e44] mt-2.5 shrink-0" />
-              <span>{l}</span>
+          {LEADERSHIP_AREAS.map((area) => (
+            <li
+              key={area}
+              className="flex items-start gap-3"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#2f9e44] mt-2 shrink-0" />
+              <span>{area}</span>
             </li>
           ))}
         </ul>
 
-        <h2 className="text-[18px] font-semibold text-[#16253d] pt-2">
+        {/* Counseling */}
+        <h2 className="text-[15px] font-semibold text-[#16253d] pt-2">
           Counseling Service to College-bound Students
         </h2>
+
         <p>
           In order to cater to the growing need of providing academic
           counseling services to college-bound students, the school has
           set up the Board of Counselors as under:
         </p>
+
         <ul className="space-y-2">
-          {BOARD_OF_COUNSELORS.map((m) => (
-            <li key={m} className="flex items-start gap-3">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#2f9e44] mt-2.5 shrink-0" />
-              <span>{m}</span>
+          {BOARD_OF_COUNSELORS.map((member) => (
+            <li
+              key={member}
+              className="flex items-start gap-3"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#2f9e44] mt-2 shrink-0" />
+              <span>{member}</span>
             </li>
           ))}
         </ul>
+
         <p>
           Most of our teachers, who are also the recommenders for our
           students, use g-mail with &hellip;&hellip;@bnks.edu.np so that

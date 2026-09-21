@@ -22,11 +22,19 @@ export const navItems: NavItem[] = [
     label: "About Us",
     href: "/about-us",
     children: [
-      { label: "Introduction", href: "/about/introduction" },
-      { label: "Message from Principal", href: "/about/principal" },
-      { label: "Board of Directors", href: "/about/board" },
-      { label: "Faculty & Staff", href: "/about/faculty" },
-      { label: "Infrastructure", href: "/about/infrastructure" },
+      { label: "History", href: "/about-us/history" },
+      { label: "School Profile", href: "/about-us/school-profile" },
+      { label: "Board Of Trustees (BOT)", href: "/about-us/board-of-trustees" },
+      {
+        label: "School Management Committee",
+        href: "/about-us/school-management-committee",
+      },
+      {
+        label: "Senior Management Team (SMT)",
+        href: "/about-us/senior-management-team",
+      },
+      { label: "FOBS (Parents' Body)", href: "/about-us/Fobs" },
+      { label: "SEBS (Alumni)", href: "/about-us/sebs" },
     ],
   },
   {
@@ -92,7 +100,7 @@ export const introduction = {
   ],
   image: "/Images/about.png",
   imageAlt: "Academic block at Budhanilkantha School",
-  href: "/about/introduction",
+  href: "/about-us/history",
 };
 
 export const latestNews = [
@@ -117,7 +125,7 @@ export const latestNews = [
 export const ourEvents = [
   {
     title: "Natural Panorama",
-    image: "/Images/events.jpg",
+    image: "/images/natural-panorama.jpg",
     href: "/gallery/photos",
   },
 ];
@@ -127,8 +135,12 @@ export const embeds = {
   googleCalendar:
     "https://calendar.google.com/calendar/embed?src=en.np%23holiday%40group.v.calendar.google.com&ctz=Asia%2FKathmandu&mode=AGENDA&showTitle=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0",
   facebookPage:
-    "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbudhanilkanthaschool&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true",
-  youtube: "https://www.youtube.com/embed/videoseries?list=PLbnksSchoolPlaylistId",
+    "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbnksofficial&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true",
+  // Direct link, used as a fallback whenever the embed above can't load
+  // (common on localhost/Safari, where cross-site tracking protection
+  // blocks Facebook's iframe cookies).
+  facebookPageUrl: "https://www.facebook.com/bnksofficial/?ref=embed_page",
+  youtube: "https://www.youtube.com/embed/uN9dYPZy9e0",
 };
 
 export const footerLinks = [

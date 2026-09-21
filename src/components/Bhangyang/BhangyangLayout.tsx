@@ -1,10 +1,10 @@
 import Navbar from "@/components/HomePage/Navbar";
-import Tobar from "@/components/HomePage/TopBar";
 import Footer from "@/components/HomePage/Footer";
-import BoardOfTrusteesBreadcrumb from "@/components/BoardOfTrustees/BoardOfTrusteesBreadCrumb";
-import BoardOfTrusteesSidebar from "@/components/BoardOfTrustees/BoardOfTrusteesSideBar";
+import Topbar from "@/components/HomePage/TopBar";
+import BhanjyangVol43Breadcrumb from "./BhangyangBreadCrumb";
+import BhanjyangVol43Sidebar from "./BhangyangSidebar";
 
-export default function BoardOfTrusteesLayout({
+export default function BhanjyangVol43Layout({
   title,
   crumbLabel,
   active,
@@ -12,8 +12,7 @@ export default function BoardOfTrusteesLayout({
 }: {
   title: string;
   /** Text shown as the last breadcrumb item, if it should read differently
-   *  from the page heading (e.g. heading "Board Of Trustees (BOT)",
-   *  breadcrumb "Board of trustee"). Defaults to `title`. */
+   * from the page heading. Defaults to `title`. */
   crumbLabel?: string;
   active: string;
   children: React.ReactNode;
@@ -27,29 +26,39 @@ export default function BoardOfTrusteesLayout({
             backgroundImage: "url('/Images/hero.jpg')",
           }}
         />
+
         <div className="absolute inset-0 -z-10 bg-black/40" />
-        <Tobar />
+
+        <Topbar />
         <Navbar />
       </section>
 
-      <BoardOfTrusteesBreadcrumb
+      <BhanjyangVol43Breadcrumb
         trail={[
           { label: "Home", href: "/" },
-          { label: "About Us", href: "/about-us" },
-          { label: crumbLabel ?? title },
+          {
+            label: "Bhanjyang ( Annual Magazine )",
+            href: "/bhanjyang",
+          },
+          {
+            label: crumbLabel ?? title,
+          },
         ]}
       />
 
       <main className="bg-white">
-        <div className="max-w-[1040px] mx-auto px-4 py-14 grid md:grid-cols-[1fr_280px] gap-x-24 gap-y-10 items-start">
+        <div className="max-w-[1200px] mx-auto px-4 py-14 grid md:grid-cols-[1fr_360px] gap-x-20 gap-y-10 items-start">
+          {/* Main Content */}
           <div>
-            <h1 className="text-[28px] font-semibold text-[#2f9e44] mb-6">
+            <h1 className="text-[28px] md:text-[32px] font-bold text-[#2f9e44] mb-6">
               {title}
             </h1>
+
             {children}
           </div>
 
-          <BoardOfTrusteesSidebar active={active} />
+          {/* Sidebar */}
+          <BhanjyangVol43Sidebar active={active} />
         </div>
       </main>
 

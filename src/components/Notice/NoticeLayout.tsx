@@ -1,10 +1,10 @@
 import Navbar from "@/components/HomePage/Navbar";
-import Tobar from "@/components/HomePage/TopBar";
 import Footer from "@/components/HomePage/Footer";
-import BoardOfTrusteesBreadcrumb from "@/components/BoardOfTrustees/BoardOfTrusteesBreadCrumb";
-import BoardOfTrusteesSidebar from "@/components/BoardOfTrustees/BoardOfTrusteesSideBar";
+import Topbar from "@/components/HomePage/TopBar";
+import NoticeBreadcrumb from "./Notice.Breadcrump";
+import NoticeSidebar from "./NoticeSidebar";
 
-export default function BoardOfTrusteesLayout({
+export default function NoticeLayout({
   title,
   crumbLabel,
   active,
@@ -12,8 +12,7 @@ export default function BoardOfTrusteesLayout({
 }: {
   title: string;
   /** Text shown as the last breadcrumb item, if it should read differently
-   *  from the page heading (e.g. heading "Board Of Trustees (BOT)",
-   *  breadcrumb "Board of trustee"). Defaults to `title`. */
+   *  from the page heading. Defaults to `title`. */
   crumbLabel?: string;
   active: string;
   children: React.ReactNode;
@@ -28,28 +27,31 @@ export default function BoardOfTrusteesLayout({
           }}
         />
         <div className="absolute inset-0 -z-10 bg-black/40" />
-        <Tobar />
+        <Topbar />
         <Navbar />
       </section>
 
-      <BoardOfTrusteesBreadcrumb
+      <NoticeBreadcrumb
         trail={[
           { label: "Home", href: "/" },
-          { label: "About Us", href: "/about-us" },
+          { label: "Notice", href: "/notice" },
           { label: crumbLabel ?? title },
         ]}
       />
 
       <main className="bg-white">
-        <div className="max-w-[1040px] mx-auto px-4 py-14 grid md:grid-cols-[1fr_280px] gap-x-24 gap-y-10 items-start">
+        {/* The Notice list runs two columns wide, so this section gets a
+            wider right-hand rail than the single-column About Us / Academics
+            sidebars (320px there vs. 560px here). */}
+        <div className="max-w-[1280px] mx-auto px-6 py-14 grid md:grid-cols-[1fr_560px] gap-12 items-start">
           <div>
-            <h1 className="text-[28px] font-semibold text-[#2f9e44] mb-6">
+            <h1 className="text-[22px] font-semibold text-[#2f9e44] mb-6">
               {title}
             </h1>
             {children}
           </div>
 
-          <BoardOfTrusteesSidebar active={active} />
+          <NoticeSidebar active={active} />
         </div>
       </main>
 

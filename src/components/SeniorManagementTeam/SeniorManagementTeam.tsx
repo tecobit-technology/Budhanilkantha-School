@@ -1,5 +1,4 @@
 import SeniorManagementTeamLayout from "@/components/SeniorManagementTeam/SeniorManagementTeamLayout";
-
 type Member = { role: string; detail: string };
 
 const MEMBERS: Member[] = [
@@ -22,7 +21,7 @@ export default function SeniorManagementTeam() {
       crumbLabel="Senior Management Team"
       active="Senior Management Team (SMT)"
     >
-      <div className="space-y-5 text-[15px] leading-[1.9] text-neutral-700">
+      <div className="space-y-5 text-[15px] leading-[1.9] text-neutral-700 text-justify">
         <p>
           Senior Management Team (SMT) is the main body to advise and
           support the Principal in overall administration of the school.

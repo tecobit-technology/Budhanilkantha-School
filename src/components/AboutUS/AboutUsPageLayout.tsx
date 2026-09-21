@@ -1,7 +1,8 @@
 import Navbar from "@/components/HomePage/Navbar";
+import TopBar from "@/components/HomePage/TopBar";
 import Footer from "@/components/HomePage/Footer";
-import Breadcrumb from "@/components/AboutUs/BreadCrumb";
-import AboutUsSidebar from "@/components/AboutUs/AboutUsSideBar";
+import Breadcrumb from "@/components/AboutUS/BreadCrumb";
+import AboutUsSidebar from "@/components/AboutUS/AboutUsSideBar";
 
 export default function AboutUsPageLayout({
   title,
@@ -14,7 +15,7 @@ export default function AboutUsPageLayout({
 }) {
   return (
     <>
-      {/* Banner with navbar overlaid (matches homepage hero styling) */}
+      {/* Banner with top bar + navbar overlaid */}
       <section className="relative isolate min-h-[300px]">
         <div
           className="absolute inset-0 -z-10 bg-cover bg-center"
@@ -23,6 +24,8 @@ export default function AboutUsPageLayout({
           }}
         />
         <div className="absolute inset-0 -z-10 bg-black/40" />
+
+        <TopBar />
         <Navbar />
       </section>
 
@@ -35,15 +38,22 @@ export default function AboutUsPageLayout({
       />
 
       <main className="bg-white">
-        <div className="max-w-[1280px] mx-auto px-6 py-14 grid md:grid-cols-[1fr_320px] gap-12 items-start">
-          <div>
-            <h1 className="text-[28px] font-semibold text-[#2f9e44] mb-6">
-              {title}
-            </h1>
-            {children}
-          </div>
+        <div className="max-w-[1120px] mx-auto px-6 py-14">
+          <div className="grid grid-cols-[1fr_260px] gap-16 items-start">
+            
+            {/* Main Content */}
+            <div className="min-w-0">
+              <h1 className="text-[30px] font-medium text-justify mb-7">
+                {title}
+              </h1>
 
-          <AboutUsSidebar active={active} />
+              {children}
+            </div>
+
+            {/* Sidebar */}
+            <AboutUsSidebar active={active} />
+
+          </div>
         </div>
       </main>
 

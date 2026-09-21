@@ -1,5 +1,6 @@
+
 import Image from "next/image";
-import AboutUsPageLayout from "@/components/AboutUs/AboutUsPageLayout";
+import AboutUsPageLayout from "@/components/AboutUS/AboutUsPageLayout";
 
 const KEY_EVENTS = [
   "Established in 1972.",
@@ -40,111 +41,124 @@ const LEADERSHIP = [
 export default function HistoryPage() {
   return (
     <AboutUsPageLayout title="History" active="History">
-      <div className="relative w-full h-[380px] overflow-hidden rounded mb-8">
+      {/* History Image */}
+      <div className="relative w-full aspect-[3/2] overflow-hidden rounded mb-8">
         <Image
           src="/Images/about.png"
           alt="Learning Resource Centre, Budhanilkantha School"
           fill
-          sizes="(max-width: 1280px) 100vw, 1280px"
+          sizes="(max-width: 768px) 100vw, 500px"
           className="object-cover"
+          priority
         />
       </div>
 
-      <div className="space-y-5 text-[15px] leading-[1.9] text-neutral-700">
+      {/* History Content */}
+      <div className="space-y-5 text-[13px] leading-[1.7] text-neutral-700 text-justify">
         <p>
-          The idea of establishing a model school that would provide
-          quality all-round education to meritorious students coming from
-          every walk of life in an environment that fosters unity in
-          diversity was conceived in 1964. The idea was initiated by the
-          Late King Mahendra in consultation with the then British Council
-          representative, Lynndon Clough.
-        </p>
-        <p>
-          After much planning and forethought, Budhanilkantha School came
-          into existence in 1972. As a joint venture between the
-          Government of the United Kingdom and the Government of Nepal,
-          the Nepali government provided the required land and the
-          British government provided all the technical and financial
-          assistance.
-        </p>
-        <p>
-          Teaching started in 1973 with one building, 82 students (all
-          boys) and about a dozen teachers. The same building served as
-          the hostel, the cafeteria and the classrooms. The construction
-          of other buildings (hostels, classrooms, dinning hall, assembly
-          hall, sports hall and staff quarters) was completed by the end
-          of 1978. Peter J. Wakeman became the first Headmaster of
-          Budhanilkantha School and Mr. Ratna Bahadur Tamot and Mr.
-          Gehendra Man Udas were the first Nepali personel to be appointed
-          as teachers.
+          The idea of establishing a model school that would provide quality
+          all-round education to meritorious students coming from every walk of
+          life in an environment that fosters unity in diversity was conceived
+          in 1964. The idea was initiated by the Late King Mahendra in
+          consultation with the then British Council representative, Lynndon
+          Clough.
         </p>
 
-        <h2 className="text-[18px] font-semibold text-[#16253d] pt-2">
+        <p>
+          After much planning and forethought, Budhanilkantha School came into
+          existence in 1972. As a joint venture between the Government of the
+          United Kingdom and the Government of Nepal, the Nepali government
+          provided the required land and the British government provided all
+          the technical and financial assistance.
+        </p>
+
+        <p>
+          Teaching started in 1973 with one building, 82 students (all boys)
+          and about a dozen teachers. The same building served as the hostel,
+          the cafeteria and the classrooms. The construction of other buildings
+          (hostels, classrooms, dinning hall, assembly hall, sports hall and
+          staff quarters) was completed by the end of 1978. Peter J. Wakeman
+          became the first Headmaster of Budhanilkantha School and Mr. Ratna
+          Bahadur Tamot and Mr. Gehendra Man Udas were the first Nepali
+          personnel to be appointed as teachers.
+        </p>
+
+        <h2 className="text-[15px] font-semibold text-[#16253d] pt-2">
           Planning for school site
         </h2>
+
         <p>
           The first batch of students took the School Leaving Certificate
-          Examination (the national exam that is taken at the end of
-          class 10) in 1980. When 11 out of 14 students listed as the Top
-          10 position holders in the whole nation were from this school,
-          Budhanilkantha School established itself as the icon of quality
-          education. In 1983, English was made the official language of
-          instruction at Budhanilkantha School and two years later the
-          Cambridge University&apos;s Ordinary-Level program was
-          introduced. The introduction of Advanced Level of the same took
-          place in 1986.
-        </p>
-        <p>
-          The major change came in 1991 when it was switched from
-          &lsquo;Boys only school&rsquo; to a co-educational institution.
-          The first batch of girls (14 in number) was introduced into the
-          system the same year. The addition of two hostels, one of which
-          was inaugurated by the late Princess Diana, in 1992 facilitated
-          the increase in the girls&apos; population.
-        </p>
-        <p>
-          In 1994, the British Management handed over the administration
-          to Nepalese management. In the years that followed the country
-          saw many political and economic turmoil that no doubt poised
-          many new challenges to Budhanilkantha. But with the support of
-          the government, the School Management Committee (SMC), teaching
-          and administrative staff, students, parents and many other
-          well-wishers, the school has been able to remain a true center
-          of excellence.
-        </p>
-        <p>
-          The growth of the school has never stopped. In 1997, the 10+2
-          program of the Higher Secondary Education Board of Nepal was
-          introduced. New subjects were introduced in the A-level too.
-          The student population continued to rise till it reached near
-          about a thousand in 1999. Addition of new hostels for the girls
-          in 1999 raised the girls&apos; population to over 300. The
-          Learning Resource Centre, completed and inaugurated in 2008,
-          has added another feather to its cap.
+          Examination (the national exam that is taken at the end of class 10)
+          in 1980. When 11 out of 14 students listed as the Top 10 position
+          holders in the whole nation were from this school, Budhanilkantha
+          School established itself as the icon of quality education. In 1983,
+          English was made the official language of instruction at Budhanilkantha
+          School and two years later the Cambridge University&#39;s Ordinary-Level
+          program was introduced. The introduction of Advanced Level of the same
+          took place in 1986.
         </p>
 
-        <h2 className="text-[18px] font-semibold text-[#16253d] pt-2">
-          Some of the key events in the history of Budhanilkantha School
-          are:
+        <p>
+          The major change came in 1991 when it was switched from &lsquo;Boys
+          only school&rsquo; to a co-educational institution. The first batch
+          of girls (14 in number) was introduced into the system the same year.
+          The addition of two hostels, one of which was inaugurated by the late
+          Princess Diana, in 1992 facilitated the increase in the girls&apos;
+          population.
+        </p>
+
+        <p>
+          In 1994, the British Management handed over the administration to
+          Nepalese management. In the years that followed the country saw many
+          political and economic turmoil that no doubt posed many new challenges
+          to Budhanilkantha. But with the support of the government, the School
+          Management Committee (SMC), teaching and administrative staff,
+          students, parents and many other well-wishers, the school has been
+          able to remain a true center of excellence.
+        </p>
+
+        <p>
+          The growth of the school has never stopped. In 1997, the 10+2 program
+          of the Higher Secondary Education Board of Nepal was introduced. New
+          subjects were introduced in the A-level too. The student population
+          continued to rise till it reached near about a thousand in 1999.
+          Addition of new hostels for the girls in 1999 raised the girls&apos;
+          population to over 300. The Learning Resource Centre, completed and
+          inaugurated in 2008, has added another feather to its cap.
+        </p>
+
+        {/* Key Events */}
+        <h2 className="text-[15px] font-semibold text-[#16253d] pt-2">
+          Some of the key events in the history of Budhanilkantha School are:
         </h2>
+
         <ul className="space-y-2">
-          {KEY_EVENTS.map((e) => (
-            <li key={e} className="flex items-start gap-3">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#2f9e44] mt-2.5 shrink-0" />
-              <span>{e}</span>
+          {KEY_EVENTS.map((event) => (
+            <li
+              key={event}
+              className="flex items-start gap-3"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-black mt-2 shrink-0" />
+              <span>{event}</span>
             </li>
           ))}
         </ul>
 
-        <h2 className="text-[18px] font-semibold text-[#16253d] pt-2">
-          The following personnel have taken the leadership in the growth
-          and shaping of Budhanilkantha School.
+        {/* Leadership */}
+        <h2 className="text-[15px] font-semibold text-[#16253d] pt-2">
+          The following personnel have taken the leadership in the growth and
+          shaping of Budhanilkantha School.
         </h2>
+
         <ul className="space-y-2">
-          {LEADERSHIP.map((l) => (
-            <li key={l} className="flex items-start gap-3">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#2f9e44] mt-2.5 shrink-0" />
-              <span>{l}</span>
+          {LEADERSHIP.map((leader) => (
+            <li
+              key={leader}
+              className="flex items-start gap-3"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-black mt-2 shrink-0" />
+              <span>{leader}</span>
             </li>
           ))}
         </ul>
@@ -152,3 +166,5 @@ export default function HistoryPage() {
     </AboutUsPageLayout>
   );
 }
+
+

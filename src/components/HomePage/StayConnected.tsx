@@ -3,19 +3,13 @@
 import { useEffect, useRef, useState } from "react";
 import { embeds } from "@/lib/site-data";
 
-/**
- * Facebook's Page Plugin iframe relies on third-party cookies. Browsers with
- * strict cross-site tracking protection (Safari's "Prevent Cross-Site
- * Tracking", most notably on http://localhost) silently block it, leaving a
- * blank/loading box. We give it a few seconds, then fall back to a simple
- * card that links straight to the real page so the section never looks dead.
- */
 function FacebookEmbed() {
   const [blocked, setBlocked] = useState(false);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     timeoutRef.current = setTimeout(() => setBlocked(true), 4000);
+
     return () => {
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
     };
@@ -32,22 +26,24 @@ function FacebookEmbed() {
         <span className="flex h-14 w-14 items-center justify-center rounded-full bg-[#1877f2] text-2xl font-bold text-white">
           f
         </span>
+
         <span className="text-[15px] font-bold text-[#1c2340]">
           Budhanilkantha School
         </span>
+
         <span className="text-[13px] text-[#5b6478]">
-          The Facebook feed couldn&apos;t load in this browser. Tap to view
-          the page on Facebook instead.
+          The Facebook feed couldn&apos;t load in this browser. Click here to
+          open the page on Facebook.
         </span>
       </a>
     );
   }
 
   return (
-    <div className="h-[430px] w-full overflow-hidden rounded-sm border border-[#e2e6ee]">
+    <div className="h-[430px] w-full overflow-hidden rounded-sm border border-[#e2e6ee] bg-white">
       <iframe
         src={embeds.facebookPage}
-        title="Budhanilkantha School on Facebook"
+        title="Budhanilkantha School Facebook"
         className="h-full w-full"
         style={{ border: 0 }}
         scrolling="no"
@@ -64,37 +60,51 @@ function FacebookEmbed() {
 export default function StayConnected() {
   return (
     <section className="bg-white py-16 lg:py-20">
-      <div className="mx-auto grid max-w-[1100px] gap-10 px-4 lg:grid-cols-3">
-        <div>
-          <h2 className="mb-8 text-[28px] font-bold text-[#1c2340]">Upcoming Events</h2>
-          <div className="h-[430px] w-full overflow-hidden rounded-sm border border-[#e2e6ee]">
-            <iframe
-              src={embeds.googleCalendar}
-              title="Upcoming events calendar"
-              className="h-full w-full"
-              style={{ border: 0 }}
-              loading="lazy"
-            />
+      <div className="mx-auto max-w-[1200px] px-4">
+        <div className="grid gap-10 lg:grid-cols-3">
+          {/* Calendar */}
+          <div>
+            <h2 className="mb-6 text-[24px] font-bold text-[#1c2340]">
+              Upcoming Events
+            </h2>
+
+            <div className="h-[430px] w-full overflow-hidden rounded-sm border border-[#e2e6ee] bg-white">
+              <iframe
+                src={embeds.googleCalendar}
+                title="Upcoming Events"
+                className="h-full w-full"
+                style={{ border: 0 }}
+                loading="lazy"
+              />
+            </div>
           </div>
-        </div>
 
-        <div>
-          <h2 className="mb-8 text-[28px] font-bold text-[#2c4b8f]">Facebook</h2>
-          <FacebookEmbed />
-        </div>
+          {/* Facebook */}
+          <div>
+            <h2 className="mb-6 text-[24px] font-bold text-[#2c4b8f]">
+              Facebook
+            </h2>
 
-        <div>
-          <h2 className="mb-8 text-[28px] font-bold text-[#d3151f]">Youtube</h2>
-          <div className="aspect-video w-full overflow-hidden rounded-sm bg-black">
-            <iframe
-              src={embeds.youtube}
-              title="Budhanilkantha School on YouTube"
-              className="h-full w-full"
-              style={{ border: 0 }}
-              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              loading="lazy"
-            />
+            <FacebookEmbed />
+          </div>
+
+          {/* YouTube */}
+          <div>
+            <h2 className="mb-6 text-[24px] font-bold text-[#d3151f]">
+              YouTube
+            </h2>
+
+            <div className="h-[430px] w-full overflow-hidden rounded-sm border border-[#e2e6ee] bg-black">
+              <iframe
+                src={embeds.youtube}
+                title="Budhanilkantha School YouTube"
+                className="h-full w-full"
+                style={{ border: 0 }}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
       </div>

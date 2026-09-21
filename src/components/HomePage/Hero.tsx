@@ -4,8 +4,8 @@ import TopBar from "./TopBar";
 
 export default function Hero() {
   return (
-    <section className="relative isolate min-h-[560px] lg:min-h-[640px]">
-      {/* Hero background */}
+    <section className="relative isolate min-h-[950px] overflow-hidden">
+      {/* Background Image */}
       <Image
         src="/Images/hero.jpg"
         alt="Budhanilkantha School campus"
@@ -15,21 +15,21 @@ export default function Hero() {
         className="-z-10 object-cover object-center"
       />
 
-      {/* Dark overlay */}
-      <div className="absolute inset-0 -z-10 bg-black/30" />
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 -z-10 bg-black/40" />
 
-      {/* Top contact bar */}
+      {/* Top Contact Bar */}
       <TopBar />
 
-      {/* Main navigation */}
+      {/* Navigation */}
       <Navbar />
 
-      {/* Hero title */}
-      <div className="mx-auto flex max-w-[1200px] items-center px-4 pb-24 pt-36 lg:pt-40">
-        <h1 className="text-[40px] font-extrabold leading-tight tracking-tight text-white drop-shadow-md sm:text-[52px] lg:text-[60px]">
-          Center of Excellence
-        </h1>
-      </div>
+      {/* Hero Content */}
+      <div className="mx-auto max-w-[1200px] px-6 pt-[220px]">
+  <h1 className="text-[28px] font-bold leading-tight text-white drop-shadow-lg md:text-[36px] lg:text-[48px]">
+    Center of Excellence
+  </h1>
+</div>
     </section>
   );
 }

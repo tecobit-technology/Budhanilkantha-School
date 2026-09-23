@@ -1,7 +1,7 @@
 import Navbar from "@/components/HomePage/Navbar";
 import Footer from "@/components/HomePage/Footer";
 import Topbar from "@/components/HomePage/TopBar";
-import AcademicsBreadcrumb from "@/components/Academics/AcademicsBreadCrumb";
+import AcademicsBreadcrumb from "@/components/Academics/AcademicsBreadcrumb";
 import AcademicsSidebar from "@/components/Academics/AcademicsSidebar";
 
 export default function AcademicsLayout({

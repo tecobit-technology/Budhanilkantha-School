@@ -1,7 +1,7 @@
 import Navbar from "@/components/HomePage/Navbar";
 import Footer from "@/components/HomePage/Footer";
 import SchoolManagementCommitteeBreadcrumb from "@/components/SchoolManagementCommittee/SchoolManagementCommitteeBreadCrumb";
-import SchoolManagementCommitteeSidebar from "@/components/SchoolManagementCommittee/SchoolManagementCommitteeSideBar";
+import SchoolManagementCommitteeSidebar from "@/components/SchoolManagementCommittee/SchoolManagementCommitteeSidebar";
 import TopBar from "../HomePage/TopBar";
 
 export default function SchoolManagementCommitteeLayout({

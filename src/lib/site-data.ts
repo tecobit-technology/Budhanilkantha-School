@@ -1,4 +1,5 @@
 import { departments } from "@/lib/academics-data";
+import { bhanjyangVolumesSorted } from "./bhanjyang-data";
 
 export const contact = {
   phones: [
@@ -35,7 +36,7 @@ export const navItems: NavItem[] = [
         label: "Senior Management Team (SMT)",
         href: "/about-us/senior-management-team",
       },
-      { label: "FOBS (Parents' Body)", href: "/about-us/Fobs" },
+      { label: "FOBS (Parents' Body)", href: "/about-us/fobs" },
       { label: "SEBS (Alumni)", href: "/about-us/sebs" },
     ],
   },
@@ -56,30 +57,32 @@ export const navItems: NavItem[] = [
       { label: "Vacancy", href: "/notice/vacancy" },
     ],
   },
-  {
-    label: "Bhanjyang ( Annual Magazine )",
-    href: "/bhanjyang",
-    children: [
-      { label: "Current Issue", href: "/bhanjyang/current" },
-      { label: "Archive", href: "/bhanjyang/archive" },
-    ],
-  },
+  
+// ...inside navItems array, replace the old Bhanjyang entry with:
+{
+  label: "Bhanjyang (Annual Magazine)",
+  href: "/bhanjyang",
+  children: bhanjyangVolumesSorted.map((v) => ({
+    label: v.title,
+    href: `/bhanjyang/${v.slug}`,
+  })),
+},
   {
     label: "Gallery",
     href: "/gallery",
     children: [
-      { label: "Photos", href: "/gallery/photos" },
-      { label: "Videos", href: "/gallery/videos" },
+      { label: "Photos", href: "/gallery/photo" },
+      { label: "Videos", href: "/gallery/video" },
     ],
   },
   { label: "Contact", href: "/contact" },
 ];
 
 export const loginLinks = [
-  { label: "Student Login", href: "/login/student" },
-  { label: "Parent Login", href: "/login/parent" },
-  { label: "Staff Login", href: "/login/staff" },
+  { label: "Login", href: "/Login" },
+  
 ];
+
 
 export const tickerNotices = [
   { title: "Revised Tender Notice (Wall Construction)", href: "/notice/tender" },
@@ -125,7 +128,7 @@ export const ourEvents = [
   {
     title: "Natural Panorama",
     image: "/Images/events.jpg",
-    href: "/About-Us/History",
+    href: "/gallery/photo",
   },
 ];
 
@@ -156,7 +159,7 @@ export const footerBlurb =
   "Budhanilkantha School (CEEB Code: 689070), located in the capital city, Kathmandu, is the government designated National School of Nepal.";
 
 export const socials = {
-  facebook: "https://www.facebook.com/budhanilkanthaschool",
-  youtube: "https://www.youtube.com/@budhanilkanthaschool",
+  facebook: "https://www.facebook.com/bnksofficial/?ref=embed_page",
+  youtube: "https://www.youtube.com/embed/uN9dYPZy9e0",
   linkedin: "https://www.linkedin.com/school/budhanilkantha-school",
 };

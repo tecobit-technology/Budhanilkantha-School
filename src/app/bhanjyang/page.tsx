@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import BhanjyangVol43 from "@/components/Bhangyang/Bhangyang";
 
 // Next.js requires this file to be named "page.tsx" so the App Router can
@@ -6,3 +7,11 @@ import BhanjyangVol43 from "@/components/Bhangyang/Bhangyang";
 export default function Page() {
   return <BhanjyangVol43 />;
 }
+=======
+import { redirect } from "next/navigation";
+import { latestBhanjyangVolume } from "@/lib/bhanjyang-data";
+
+export default function BhanjyangPage() {
+  redirect(`/bhanjyang/${latestBhanjyangVolume.slug}`);
+}
+>>>>>>> b8fc9d8f5fc12b55374176c23626c4b156ecf66b

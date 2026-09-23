@@ -60,9 +60,9 @@ export default function Navbar() {
               {/* Desktop dropdown */}
               {item.children && openMenu === item.label && (
                 <div className="absolute left-0 top-full min-w-[200px] rounded-sm bg-black/55 py-2 shadow-xl backdrop-blur-sm">
-                  {item.children.map((child) => (
+                  {item.children.map((child, index) => (
                     <Link
-                      key={child.href}
+                      key={`${item.label}-${child.label}-${child.href}-${index}`}
                       href={child.href}
                       className="block px-4 py-[7px] text-[13px] leading-snug text-white hover:text-[#3aa94f]"
                     >
@@ -130,9 +130,9 @@ export default function Navbar() {
               {/* Mobile submenu */}
               {item.children && mobileSub === item.label && (
                 <div className="bg-[#fafafa] pb-2">
-                  {item.children.map((child) => (
+                  {item.children.map((child, index) => (
                     <Link
-                      key={child.href}
+                      key={`${item.label}-${child.label}-${child.href}-${index}`}
                       href={child.href}
                       onClick={() => setMobileOpen(false)}
                       className="block px-7 py-2 text-[14px] text-[#444]"

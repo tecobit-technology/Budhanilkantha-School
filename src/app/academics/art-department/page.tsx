@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-import AcademicDepartment from "@/components/Academics/AcademicDepartment";
-
-export default function Page() {
-  return <AcademicDepartment slug="art-department" />;
-}
-=======
 import DepartmentPage from "@/components/Academics/DepartmentPage";
 
 // Next.js requires this file to be named "page.tsx" so the App Router can
@@ -13,4 +6,3 @@ import DepartmentPage from "@/components/Academics/DepartmentPage";
 export default function Page() {
   return <DepartmentPage slug="art-department" />;
 }
->>>>>>> f238de886d48e20a38f258baef05dd59a0ab26bf

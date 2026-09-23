@@ -1,10 +1,10 @@
 import Navbar from "@/components/HomePage/Navbar";
 import Footer from "@/components/HomePage/Footer";
 import Topbar from "@/components/HomePage/TopBar";
-import NoticeBreadcrumb from "./Notice.Breadcrump";
-import NoticeSidebar from "./NoticeSidebar";
+import TeachersAndPsychologicalCounsellorWantedBreadcrumb from "@/components/TeachersAndPsychologicalCounsellorWanted/TeachersAndPsychologicalCounsellorWantedBreadcrumb";
+import TeachersAndPsychologicalCounsellorWantedSidebar from "@/components/TeachersAndPsychologicalCounsellorWanted/TeachersAndPsychologicalCounsellorWantedSidebar";
 
-export default function NoticeLayout({
+export default function TeachersAndPsychologicalCounsellorWantedLayout({
   title,
   crumbLabel,
   active,
@@ -19,19 +19,20 @@ export default function NoticeLayout({
 }) {
   return (
     <>
-   <section className="relative isolate min-h-[300px]">
-         <div
-           className="absolute inset-0 -z-10 bg-cover bg-center"
-           style={{
-             backgroundImage: "url('/Images/hero.jpg')",
-           }}
-         />
-         <div className="absolute inset-0 -z-10 bg-black/40" />
-         <Topbar />
-         <Navbar />
-       </section>
+    <section className="relative isolate min-h-[300px]">
+            <div
+              className="absolute inset-0 -z-10 bg-cover bg-center"
+              style={{
+                backgroundImage: "url('/Images/hero.jpg')",
+              }}
+            />
+            <div className="absolute inset-0 -z-10 bg-black/40" />
+            <Topbar />
+            <Navbar />
+          </section>
+      
 
-      <NoticeBreadcrumb
+      <TeachersAndPsychologicalCounsellorWantedBreadcrumb
         trail={[
           { label: "Home", href: "/" },
           { label: "Notice", href: "/notice" },
@@ -51,7 +52,7 @@ export default function NoticeLayout({
             {children}
           </div>
 
-          <NoticeSidebar active={active} />
+          <TeachersAndPsychologicalCounsellorWantedSidebar active={active} />
         </div>
       </main>
 

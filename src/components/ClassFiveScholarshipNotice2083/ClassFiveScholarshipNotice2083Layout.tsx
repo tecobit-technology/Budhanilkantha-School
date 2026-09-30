@@ -3,6 +3,7 @@ import Footer from "@/components/HomePage/Footer";
 import ClassFiveScholarshipNotice2083Breadcrumb from "@/components/ClassFiveScholarshipNotice2083/ClassFiveScholarshipNotice2083Breadcrumb";
 import ClassFiveScholarshipNotice2083Sidebar from "@/components/ClassFiveScholarshipNotice2083/ClassFiveScholarshipNotice2083Sidebar";
 import TopBar from "../HomePage/TopBar";
+import Reveal from "@/components/Reveal";
 
 export default function ClassFiveScholarshipNotice2083Layout({
   title,
@@ -23,7 +24,7 @@ export default function ClassFiveScholarshipNotice2083Layout({
             <div
               className="absolute inset-0 -z-10 bg-cover bg-center"
               style={{
-                backgroundImage: "url('/Images/hero.jpg')",
+                backgroundImage: "url('/Images/hero.png')",
               }}
             />
             <div className="absolute inset-0 -z-10 bg-black/40" />
@@ -44,14 +45,16 @@ export default function ClassFiveScholarshipNotice2083Layout({
             wider right-hand rail than the single-column About Us / Academics
             sidebars (320px there vs. 560px here). */}
         <div className="max-w-[1280px] mx-auto px-6 py-14 grid md:grid-cols-[1fr_560px] gap-12 items-start">
-          <div>
-            <h1 className="text-[22px] font-semibold text-[#2f9e44] mb-6">
+          <Reveal direction="right">
+            <h1 className="ca-page-title mb-6 text-[#2f9e44]">
               {title}
             </h1>
             {children}
-          </div>
+          </Reveal>
 
-          <ClassFiveScholarshipNotice2083Sidebar active={active} />
+          <Reveal direction="left" delay={120}>
+            <ClassFiveScholarshipNotice2083Sidebar active={active} />
+          </Reveal>
         </div>
       </main>
 

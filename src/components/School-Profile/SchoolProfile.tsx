@@ -31,15 +31,10 @@ export default function SchoolProfile() {
       title="School Profile"
       active="School Profile"
     >
-      {/* Page Section Title */}
-      <div className="text-[15px] font-semibold text-[#16253d] pt-2 mb-6 text-center underline decoration-black decoration-1 underline-offset-4">
-        <p>School Profile</p>
-      </div>
-
       {/* School Profile Content */}
       <div className="space-y-5 text-[13px] leading-[1.7] text-neutral-700 text-justify">
         {/* General */}
-        <h2 className="text-[15px] font-semibold text-[#16253d] pt-2">
+        <h2 className="ca-subheading">
           General
         </h2>
 
@@ -47,8 +42,8 @@ export default function SchoolProfile() {
           Nepal, the land of the legendary Yeti, the birth place of Lord
           Buddha and home to the highest mountain of the world &ndash; Mt.
           Everest, is one of the developing countries in the world.
-          Situated in Budhanilkantha Municipality, in the Kathmandu Valley,
-          Budhanilkantha School (CEEB Code: 689070), is the government
+          Situated in Crestwood Municipality, in the Kathmandu Valley,
+          Crestwood Academy (CEEB Code: 689070), is the government
           designated National School of Nepal. It is a fully residential
           English medium school established in December 1972 with the
           joint cooperation of the Government of Nepal and the Government
@@ -71,9 +66,9 @@ export default function SchoolProfile() {
           being the Ministry of Education. The Board of Trustees (BOT) and
           the School Management Committee (SMC) are chaired by the
           Secretary and the Joint Secretary of the Ministry of Education
-          and Sports respectively. Society of Ex Budhanilkantha Students
-          (SEBS), the alumni association, and Friends of Budhanilkantha
-          School (FOBS) are the two organizations that keenly take
+          and Sports respectively. Society of Ex Crestwood Students
+          (SEBS), the alumni association, and Friends of Crestwood
+          Academy (FOBS) are the two organizations that keenly take
           interest in the welfare of the school.
         </p>
 
@@ -87,12 +82,12 @@ export default function SchoolProfile() {
         </p>
 
         {/* Courses */}
-        <h2 className="text-[15px] font-semibold text-[#16253d] pt-2">
-          Courses of Study at Budhanilkantha School
+        <h2 className="ca-subheading">
+          Courses of Study at Crestwood Academy
         </h2>
 
         <p>
-          Budhanilkantha School follows the National Curriculum of Nepal
+          Crestwood Academy follows the National Curriculum of Nepal
           from Grade 5 to 10. The main entry of the students takes place
           in Grade 5. At the end of Grade 10, the students sit for their
           Secondary Education Examination (SEE), which is conducted
@@ -106,11 +101,11 @@ export default function SchoolProfile() {
 
         <p>
           After the SEE, selected students from inside as well as outside
-          Budhanilkantha School can take either of the two courses:
+          Crestwood Academy can take either of the two courses:
         </p>
 
         {/* NEB */}
-        <h2 className="text-[15px] font-semibold text-[#16253d] pt-2">
+        <h2 className="ca-subheading">
           1. Grades 11 &amp; 12 (Science) of National Education Board (NEB),
           Nepal
         </h2>
@@ -125,7 +120,7 @@ export default function SchoolProfile() {
         </p>
 
         {/* Cambridge */}
-        <h2 className="text-[15px] font-semibold text-[#16253d] pt-2">
+        <h2 className="ca-subheading">
           2. General Certificate of Education (GCE) of Cambridge Assessment
           International Education (CAIE), the University of Cambridge, UK
         </h2>
@@ -159,7 +154,7 @@ export default function SchoolProfile() {
         </p>
 
         <p>
-          Budhanilkantha School operates on a semester system. In the
+          Crestwood Academy operates on a semester system. In the
           first year, students sit for two school examinations: Mid-Year
           and Annual. In the second year, they sit for a semester
           examination (September), a Mid-year examination (January) and a
@@ -171,12 +166,12 @@ export default function SchoolProfile() {
         </p>
 
         {/* Leadership */}
-        <h2 className="text-[15px] font-semibold text-[#16253d] pt-2">
+        <h2 className="ca-subheading">
           Leadership, Responsibilities and Co-Curricular Program
         </h2>
 
         <p>
-          Budhanilkantha School aims to provide all-round education to
+          Crestwood Academy aims to provide all-round education to
           its students through a wide range of sporting and numerous
           co-curricular activities such as drama and debating, community
           services, scouting, sports and so on. Students are actively
@@ -198,7 +193,7 @@ export default function SchoolProfile() {
         </ul>
 
         {/* Counseling */}
-        <h2 className="text-[15px] font-semibold text-[#16253d] pt-2">
+        <h2 className="ca-subheading">
           Counseling Service to College-bound Students
         </h2>
 
@@ -222,7 +217,7 @@ export default function SchoolProfile() {
 
         <p>
           Most of our teachers, who are also the recommenders for our
-          students, use g-mail with &hellip;&hellip;@bnks.edu.np so that
+          students, use g-mail with &hellip;&hellip;@crestwoodacademy.edu.np so that
           official correspondence could be more authentic and reliable.
         </p>
       </div>

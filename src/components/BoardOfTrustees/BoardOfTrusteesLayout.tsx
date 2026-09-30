@@ -3,6 +3,7 @@ import Tobar from "@/components/HomePage/TopBar";
 import Footer from "@/components/HomePage/Footer";
 import BoardOfTrusteesBreadcrumb from "@/components/BoardOfTrustees/BoardOfTrusteesBreadCrumb";
 import BoardOfTrusteesSidebar from "@/components/BoardOfTrustees/BoardOfTrusteesSideBar";
+import Reveal from "@/components/Reveal";
 
 export default function BoardOfTrusteesLayout({
   title,
@@ -24,11 +25,11 @@ export default function BoardOfTrusteesLayout({
         <div
           className="absolute inset-0 -z-10 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/Images/hero.jpg')",
+            backgroundImage: "url('/Images/hero.png')",
           }}
         />
         <div className="absolute inset-0 -z-10 bg-black/40" />
-        <Tobar />
+     
         <Navbar />
       </section>
 
@@ -42,14 +43,16 @@ export default function BoardOfTrusteesLayout({
 
       <main className="bg-white">
         <div className="max-w-[1040px] mx-auto px-4 py-14 grid md:grid-cols-[1fr_280px] gap-x-24 gap-y-10 items-start">
-          <div>
-            <h1 className="text-[28px] font-semibold text-[#2f9e44] mb-6">
+          <Reveal direction="right">
+            <h1 className="ca-page-title mb-6 text-[#2f9e44]">
               {title}
             </h1>
             {children}
-          </div>
+          </Reveal>
 
-          <BoardOfTrusteesSidebar active={active} />
+          <Reveal direction="left" delay={120}>
+            <BoardOfTrusteesSidebar active={active} />
+          </Reveal>
         </div>
       </main>
 

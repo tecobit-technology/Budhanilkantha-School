@@ -38,7 +38,7 @@ export default function Class11BookList() {
     <Class11BookListLayout title="Class 11 Book List, 2082 B.S." active="Class 11 Book List, 2082 B.S.">
       <div className="text-[15px] text-neutral-700">
         <div className="text-center mb-5">
-          <p className="font-bold text-neutral-800 text-[16px] m-0">Budhanilkantha School</p>
+          <p className="font-bold text-neutral-800 text-[16px] m-0">Crestwood Academy</p>
           <p className="font-bold text-neutral-800 text-[16px] m-0">Book Lists for AS Level (A1) Students</p>
         </div>
 

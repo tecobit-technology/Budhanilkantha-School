@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Italianno, Open_Sans } from "next/font/google";
+import { Open_Sans, Oswald } from "next/font/google";
+import RevealBootstrap from "@/components/RevealBootstrap";
 import "./globals.css";
 
 const openSans = Open_Sans({
@@ -8,18 +9,18 @@ const openSans = Open_Sans({
   display: "swap",
 });
 
-// Calligraphic face used only for the wordmark next to the crest.
-const italianno = Italianno({
+// Condensed uppercase display face for hero/section headings.
+const oswald = Oswald({
   subsets: ["latin"],
-  weight: "400",
-  variable: "--font-script",
+  weight: ["500", "600", "700"],
+  variable: "--font-display",
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Budhanilkantha School | Center of Excellence",
+  title: "Crestwood Academy | Center of Excellence",
   description:
-    "Budhanilkantha School (CEEB Code: 689070), located in Kathmandu, is the government designated National School of Nepal.",
+    "Crestwood Academy (CEEB Code: 689070), located in Kathmandu, is the government designated National School of Nepal.",
 };
 
 export default function RootLayout({
@@ -28,8 +29,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" data-scroll-behavior="smooth">
-      <body className={`${openSans.variable} ${italianno.variable} font-sans antialiased`}>
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Gates the scroll-reveal hidden state so content is never briefly
+            visible before hydration. Runs before first paint. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: "document.documentElement.classList.add('js-reveal')",
+          }}
+        />
+      </head>
+      <body className={`${openSans.variable} ${oswald.variable} font-sans antialiased`}>
+        <RevealBootstrap />
         {children}
       </body>
     </html>

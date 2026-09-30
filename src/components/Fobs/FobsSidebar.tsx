@@ -19,7 +19,7 @@ export const FOBS_NAV_PAGES = [
 export default function FobsSidebar({ active }: { active: string }) {
   return (
     <div>
-      <h2 className="text-[17px] font-semibold text-[#16253d] mb-4">
+      <h2 className="ca-subheading mb-1">
         About Us
       </h2>
       <div className="flex flex-col gap-2">

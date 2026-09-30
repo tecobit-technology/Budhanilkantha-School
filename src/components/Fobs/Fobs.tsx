@@ -21,11 +21,11 @@ export default function Fobs() {
     <FobsLayout title="FOBS (Parents’ Body)" crumbLabel="FOBS" active="FOBS (Parents' Body)">
       <div className="space-y-5 text-[15px] leading-[1.9] text-neutral-700 text-justify">
         <p>
-          Friends of Budhanilkantha School (FOBS) is the association of
-          parents and guardians of the students of Budhanilkantha School.
+          Friends of Crestwood Academy (FOBS) is the association of
+          parents and guardians of the students of Crestwood Academy.
         </p>
 
-        <h2 className="text-[15px] font-semibold text-neutral-800 pt-2">
+        <h2 className="ca-subheading">
           FOBS Executive Committee
         </h2>
 

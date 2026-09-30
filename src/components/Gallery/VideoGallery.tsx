@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
 import { videoItems } from "@/lib/gallery-data";
 import Navbar from "../HomePage/Navbar";
-import TopBar from "../HomePage/TopBar";
+
 import Footer from "../HomePage/Footer";
 
 export default function VideoGallery() {
@@ -37,10 +37,10 @@ export default function VideoGallery() {
   return (
     <>
      <div className="bg-gradient-to-b from-[#a8a8a8] to-white">
-            <TopBar />
-            <Navbar />
+         
+           <Navbar galleryMode />
           </div>
-    <section className="mx-auto max-w-[1200px] px-4 py-10 sm:px-6 md:py-14">
+    <section className="mx-auto max-w-[1200px] px-4 pt-36 pb-10 sm:px-6 md:pt-40 md:pb-14">
       {/* Filter tabs */}
       <div className="mb-8 flex flex-wrap gap-2">
         {categories.map((cat) => (

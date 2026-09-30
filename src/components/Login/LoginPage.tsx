@@ -7,7 +7,7 @@ export default function LoginPage() {
     <div className="relative min-h-screen w-full overflow-hidden">
       {/* Background photo */}
       <Image
-        src="/Images/hero.jpg"
+        src="/Images/hero.png"
         alt=""
         fill
         priority

@@ -13,7 +13,7 @@ function slugify(label: string): string {
 const NOTICE_COLUMN_ONE = [
   "Class 5 Scholarship Result, 2082 B.S.",
   "Class 11 Book List, 2082 B.S.",
-  "Invitation for Bids No: BNKS/NCB/Works/01/2082-83",
+  "Invitation for Bids No: CA/NCB/Works/01/2082-83",
   "Teachers and Psychological Counsellor Wanted",
   "Scholarship Application Form for the A/Y, 2083",
   "Wanted Non-teaching staff",
@@ -51,7 +51,7 @@ const NOTICE_COLUMN_TWO = [
   "Statistics Teacher Wanted",
   "Press Released",
   "INVITATION FOR BIDS",
-  "BNKS Contributes Rs. 14 Lakh to the Prime Minister's Disaster Relief Fund",
+  "CA Contributes Rs. 14 Lakh to the Prime Minister's Disaster Relief Fund",
 ];
 
 function NoticeColumn({
@@ -90,7 +90,7 @@ export default function RationTenderNoticeSidebar({
 }) {
   return (
     <div>
-      <h2 className="text-[17px] font-semibold text-[#16253d] mb-4">
+      <h2 className="ca-subheading mb-1">
         Notice
       </h2>
       <div className="grid grid-cols-2 gap-3">

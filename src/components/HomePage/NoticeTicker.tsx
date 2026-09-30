@@ -6,13 +6,13 @@ export default function NoticeTicker() {
   const items = [...tickerNotices, ...tickerNotices];
 
   return (
-    <div className="relative z-10 flex bg-[#3aa94f] text-white">
-      <div className="relative flex shrink-0 items-center bg-[#3f2c8f] px-6 py-4 pr-8">
+    <div className="relative z-10 flex bg-[#B7012C] text-white">
+      <div className="relative flex shrink-0 items-center bg-[#00224A] px-6 py-4 pr-8">
         <span className="text-[19px] font-bold">Notice</span>
         {/* Arrow point on the right edge of the tab */}
         <span
           aria-hidden
-          className="absolute left-full top-0 h-full w-5 bg-[#3f2c8f]"
+          className="absolute left-full top-0 h-full w-5 bg-[#00224A]"
           style={{ clipPath: "polygon(0 0, 0 100%, 100% 50%)" }}
         />
       </div>

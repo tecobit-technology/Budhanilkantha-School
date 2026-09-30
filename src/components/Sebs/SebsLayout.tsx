@@ -3,6 +3,7 @@ import Footer from "@/components/HomePage/Footer";
 import Topbar from "@/components/HomePage/TopBar";
 import SebsBreadcrumb from "@/components/Sebs/SebsBreadCumb";
 import SebsSidebar from "@/components/Sebs/SebsSidebar";
+import Reveal from "@/components/Reveal";
 
 export default function SebsLayout({
   title,
@@ -23,11 +24,11 @@ export default function SebsLayout({
               <div
                 className="absolute inset-0 -z-10 bg-cover bg-center"
                 style={{
-                  backgroundImage: "url('/Images/hero.jpg')",
+                  backgroundImage: "url('/Images/hero.png')",
                 }}
               />
               <div className="absolute inset-0 -z-10 bg-black/40" />
-              <Topbar />
+        
               <Navbar />
             </section>
       
@@ -42,14 +43,16 @@ export default function SebsLayout({
 
       <main className="bg-white">
         <div className="max-w-[1040px] mx-auto px-4 py-14 grid md:grid-cols-[1fr_280px] gap-x-24 gap-y-10 items-start">
-          <div>
-            <h1 className="text-[28px] font-semibold text-[#2f9e44] mb-6">
+          <Reveal direction="right">
+            <h1 className="ca-page-title mb-6 text-[#2f9e44]">
               {title}
             </h1>
             {children}
-          </div>
+          </Reveal>
 
-          <SebsSidebar active={active} />
+          <Reveal direction="left" delay={120}>
+            <SebsSidebar active={active} />
+          </Reveal>
         </div>
       </main>
 

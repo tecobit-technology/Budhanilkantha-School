@@ -11,8 +11,8 @@ export default function BhanjyangVol43() {
         {/* Real scanned cover of the magazine */}
         <div className="relative w-full aspect-[3/4] overflow-hidden rounded shadow-sm">
           <Image
-            src="/Images/bhangyang.png"
-            alt="Cover of Bhanjyang, Budhanilkantha School Annual Magazine, Volume 43"
+            src="/Images/bhanjyang.png"
+            alt="Cover of Bhanjyang, Crestwood Academy Annual Magazine, Volume 43"
             fill
             sizes="500px"
             className="object-cover"

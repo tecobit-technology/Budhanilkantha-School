@@ -27,7 +27,7 @@ export default function TeachersAndPsychologicalCounsellorWanted() {
         </p>
 
         <p className="text-justify">
-          Budhanilkantha School requires teachers and psychological
+          Crestwood Academy requires teachers and psychological
           counsellor for new academic session, 2083 B.S. For teachers,
           preference will be given to candidates with A Level teaching
           experience. Female candidates are encouraged to apply. Salary
@@ -63,7 +63,7 @@ export default function TeachersAndPsychologicalCounsellorWanted() {
           An application letter along with a completed Application Form and
           copies of all relevant documents should be submitted by 4
           <sup>th</sup> Falgun, 2082 through the school&rsquo;s email:{" "}
-          office@bnks.edu.np.
+          office@crestwoodacademy.edu.np.
         </p>
 
         <p className="font-bold text-neutral-800">

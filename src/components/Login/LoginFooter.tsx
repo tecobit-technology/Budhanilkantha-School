@@ -30,7 +30,7 @@ export default function LoginFooter() {
         {/* Email */}
         <div className="flex items-center gap-2 whitespace-nowrap">
           <span className="text-base">✉</span>
-          <span>info@bnks.edu.np</span>
+          <span>info@crestwoodacademy.edu.np</span>
         </div>
 
         {/* Location */}

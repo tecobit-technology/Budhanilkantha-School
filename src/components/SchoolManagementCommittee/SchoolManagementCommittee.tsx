@@ -25,10 +25,10 @@ export default function SchoolManagementCommittee() {
           administering and monitoring the policies and programmes. SMC is
           chaired by the Joint Secretary, Ministry of Education and
           Sports. The Ministry for Finance, SEBS, FOBS and teachers of
-          Budhanilkantha School have permanent representation in the SMC.
+          Crestwood Academy have permanent representation in the SMC.
         </p>
 
-        <h2 className="text-[15px] font-semibold text-neutral-800 pt-2">
+        <h2 className="ca-subheading">
           The list of current members of the SMC is as under:
         </h2>
 

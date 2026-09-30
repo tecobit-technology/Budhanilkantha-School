@@ -1,6 +1,7 @@
 
 import Image from "next/image";
 import AboutUsPageLayout from "@/components/AboutUS/AboutUsPageLayout";
+import Reveal from "@/components/Reveal";
 
 const KEY_EVENTS = [
   "Established in 1972.",
@@ -11,7 +12,7 @@ const KEY_EVENTS = [
   "The Cambridge University's O-Level program was introduced in 1985.",
   "A-Level Program of Cambridge University was introduced in 1986.",
   "Construction of swimming pool was completed in 1988.",
-  "In 1991 Budhanilkantha School became a co-educational institution.",
+  "In 1991 Crestwood Academy became a co-educational institution.",
   "Hiunchuli and Saipal House, two hostels for girls, were added in 1992.",
   "In 1994, the management was handed over to a Nepalese management team by the British government.",
   "In 1997, on the occasion of the school's Silver Jubilee Year the school introduced 10+2 program of the Higher Secondary Education Board.",
@@ -45,7 +46,7 @@ export default function HistoryPage() {
       <div className="relative w-full aspect-[3/2] overflow-hidden rounded mb-8">
         <Image
           src="/Images/about.png"
-          alt="Learning Resource Centre, Budhanilkantha School"
+          alt="Learning Resource Centre, Crestwood Academy"
           fill
           sizes="(max-width: 768px) 100vw, 500px"
           className="object-cover"
@@ -65,7 +66,7 @@ export default function HistoryPage() {
         </p>
 
         <p>
-          After much planning and forethought, Budhanilkantha School came into
+          After much planning and forethought, Crestwood Academy came into
           existence in 1972. As a joint venture between the Government of the
           United Kingdom and the Government of Nepal, the Nepali government
           provided the required land and the British government provided all
@@ -78,12 +79,12 @@ export default function HistoryPage() {
           the cafeteria and the classrooms. The construction of other buildings
           (hostels, classrooms, dinning hall, assembly hall, sports hall and
           staff quarters) was completed by the end of 1978. Peter J. Wakeman
-          became the first Headmaster of Budhanilkantha School and Mr. Ratna
+          became the first Headmaster of Crestwood Academy and Mr. Ratna
           Bahadur Tamot and Mr. Gehendra Man Udas were the first Nepali
           personnel to be appointed as teachers.
         </p>
 
-        <h2 className="text-[15px] font-semibold text-[#16253d] pt-2">
+        <h2 className="ca-subheading">
           Planning for school site
         </h2>
 
@@ -91,10 +92,10 @@ export default function HistoryPage() {
           The first batch of students took the School Leaving Certificate
           Examination (the national exam that is taken at the end of class 10)
           in 1980. When 11 out of 14 students listed as the Top 10 position
-          holders in the whole nation were from this school, Budhanilkantha
-          School established itself as the icon of quality education. In 1983,
-          English was made the official language of instruction at Budhanilkantha
-          School and two years later the Cambridge University&#39;s Ordinary-Level
+          holders in the whole nation were from this school, Crestwood
+          Academy established itself as the icon of quality education. In 1983,
+          English was made the official language of instruction at Crestwood
+          Academy and two years later the Cambridge University&#39;s Ordinary-Level
           program was introduced. The introduction of Advanced Level of the same
           took place in 1986.
         </p>
@@ -112,7 +113,7 @@ export default function HistoryPage() {
           In 1994, the British Management handed over the administration to
           Nepalese management. In the years that followed the country saw many
           political and economic turmoil that no doubt posed many new challenges
-          to Budhanilkantha. But with the support of the government, the School
+          to Crestwood. But with the support of the government, the School
           Management Committee (SMC), teaching and administrative staff,
           students, parents and many other well-wishers, the school has been
           able to remain a true center of excellence.
@@ -129,37 +130,43 @@ export default function HistoryPage() {
         </p>
 
         {/* Key Events */}
-        <h2 className="text-[15px] font-semibold text-[#16253d] pt-2">
-          Some of the key events in the history of Budhanilkantha School are:
+        <h2 className="ca-subheading">
+          Some of the key events in the history of Crestwood Academy are:
         </h2>
 
         <ul className="space-y-2">
-          {KEY_EVENTS.map((event) => (
-            <li
+          {KEY_EVENTS.map((event, i) => (
+            <Reveal
               key={event}
+              as="li"
+              direction="left"
+              delay={Math.min(i, 10) * 55}
               className="flex items-start gap-3"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-black mt-2 shrink-0" />
               <span>{event}</span>
-            </li>
+            </Reveal>
           ))}
         </ul>
 
         {/* Leadership */}
-        <h2 className="text-[15px] font-semibold text-[#16253d] pt-2">
+        <h2 className="ca-subheading">
           The following personnel have taken the leadership in the growth and
-          shaping of Budhanilkantha School.
+          shaping of Crestwood Academy.
         </h2>
 
         <ul className="space-y-2">
-          {LEADERSHIP.map((leader) => (
-            <li
+          {LEADERSHIP.map((leader, i) => (
+            <Reveal
               key={leader}
+              as="li"
+              direction="left"
+              delay={Math.min(i, 10) * 55}
               className="flex items-start gap-3"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-black mt-2 shrink-0" />
               <span>{leader}</span>
-            </li>
+            </Reveal>
           ))}
         </ul>
       </div>

@@ -105,7 +105,7 @@ export default function TopBar() {
           {/* Apply Online */}
           <Link
             href="/ApplyOnline"
-            className="rounded-sm border border-[#3aa94f] px-4 py-2 text-[12px] font-bold text-[#4bd063] transition-colors hover:bg-[#3aa94f] hover:text-white"
+            className="rounded-sm border border-[#B7012C] px-4 py-2 text-[12px] font-bold text-[#B7012C] transition-colors hover:bg-[#B7012C] hover:text-white"
           >
             Apply Online
           </Link>

@@ -3,17 +3,17 @@ import InvitationForBidsLayout from "@/components/InvitationForBids/InvitationFo
 export default function InvitationForBids() {
   return (
     <InvitationForBidsLayout
-      title="Invitation for Bids No: BNKS/NCB/Works/01/2082-83"
-      active="Invitation for Bids No: BNKS/NCB/Works/01/2082-83"
+      title="Invitation for Bids No: CA/NCB/Works/01/2082-83"
+      active="Invitation for Bids No: CA/NCB/Works/01/2082-83"
     >
       <div className="text-[15px] leading-[1.9] text-neutral-700">
         <p className="text-center font-medium m-0">
-          Invitation for Bids No: BNKS/NCB/Works/01/2082-83
+          Invitation for Bids No: CA/NCB/Works/01/2082-83
         </p>
         <p className="text-center m-0 mb-4">Date of publication: 2082-08-23</p>
 
         <p className="text-justify">
-          Budhanilkantha School (BNKS) invites electronic bids from eligible
+          Crestwood Academy (CA) invites electronic bids from eligible
           bidders for the construction of of East Side Boundary Wall with
           V-Drain, Toe Wall and Landscaping, Main Gate and Guard Post
           (Package-C &ldquo;1<sup>st</sup> Phase&rdquo;) under National
@@ -28,7 +28,7 @@ export default function InvitationForBids() {
             className="inline-flex items-center gap-2 bg-[#2f9e44] text-white text-[13.5px] font-medium px-4 py-2.5 rounded hover:bg-[#278239] transition-colors"
           >
             <span aria-hidden="true">⬇</span>
-            Invitation for Bids No: BNKS/NCB/Works/01/2082-83
+            Invitation for Bids No: CA/NCB/Works/01/2082-83
           </a>
         </div>
       </div>

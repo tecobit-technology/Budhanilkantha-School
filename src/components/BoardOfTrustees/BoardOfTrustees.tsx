@@ -10,9 +10,9 @@ const MEMBERS: Member[] = [
   { role: "Member", detail: "Nominee of the Nepal Bankers' Association" },
   { role: "Member", detail: "Nominee of the National Planning Commission" },
   { role: "Member", detail: "Nominee of the Federation of Nepalese Chambers of Commerce and Industry (FNCCI)" },
-  { role: "Member", detail: "Principal, Budhanilkantha School" },
+  { role: "Member", detail: "Principal, Crestwood Academy" },
   { role: "Member", detail: "One alumnus of the school nominated by the Government of Nepal" },
-  { role: "Member Secretary", detail: "Administrative Officer (CAO), Budhanilkantha School" },
+  { role: "Member Secretary", detail: "Administrative Officer (CAO), Crestwood Academy" },
 ];
 
 export default function BoardOfTrustees() {
@@ -24,13 +24,13 @@ export default function BoardOfTrustees() {
     >
       <div className="space-y-5 text-[15px] leading-[1.9] text-neutral-700">
         <p className="text-justify">
-          The Board of Trustees is the apex governing body of Budhanilkantha
-          School. It is constituted under the Budhanilkantha School
+          The Board of Trustees is the apex governing body of Crestwood
+          Academy. It is constituted under the Crestwood Academy
           (Development Board) Act and oversees the overall policy, guidance,
           direction and governance of the school.
         </p>
 
-        <h2 className="text-[15px] font-semibold text-neutral-800 pt-2">
+        <h2 className="ca-subheading">
           Composition of the Board of Trustees
         </h2>
 

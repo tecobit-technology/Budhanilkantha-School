@@ -23,7 +23,7 @@ export default function BhanjyangVol43Layout({
         <div
           className="absolute inset-0 -z-10 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/Images/hero.jpg')",
+            backgroundImage: "url('/Images/hero.png')",
           }}
         />
 
@@ -50,7 +50,7 @@ export default function BhanjyangVol43Layout({
         <div className="max-w-[1200px] mx-auto px-4 py-14 grid md:grid-cols-[1fr_360px] gap-x-20 gap-y-10 items-start">
           {/* Main Content */}
           <div>
-            <h1 className="text-[28px] md:text-[32px] font-bold text-[#2f9e44] mb-6">
+            <h1 className="ca-page-title mb-6 text-[#2f9e44]">
               {title}
             </h1>
 

@@ -12,7 +12,7 @@ export default function ClassFiveScholarshipNotice2083() {
           OCR from an image is error-prone — check this against the real
           notice before publishing, especially dates and figures.
         */}
-        <h2 className="text-center text-[19px] font-semibold text-neutral-800 mb-4">
+        <h2 className="ca-subheading text-center">
           सूचना
         </h2>
 

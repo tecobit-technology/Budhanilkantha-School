@@ -10,7 +10,7 @@ export default function LoginRibbon() {
     >
       <Image
         src="/Images/ribbon.png"
-        alt="Budhanilkantha School"
+        alt="Crestwood Academy"
         width={480}
         height={190}
         priority

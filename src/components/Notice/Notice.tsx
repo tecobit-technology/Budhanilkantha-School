@@ -7,7 +7,7 @@ export default function ClassFiveScholarshipResult() {
       active="Class 5 Scholarship Result, 2082 B.S."
     >
       <div className="text-[15px] leading-[1.9] text-neutral-700">
-        <h2 className="text-center text-[19px] font-semibold text-neutral-800 mb-4">
+        <h2 className="ca-subheading text-center">
           सूचना
         </h2>
 

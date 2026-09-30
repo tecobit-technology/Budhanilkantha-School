@@ -12,7 +12,7 @@ export function slugify(label: string): string {
 export const NOTICE_COLUMN_ONE = [
   "Class 5 Scholarship Result, 2082 B.S.",
   "Class 11 Book List, 2082 B.S.",
-  "Invitation for Bids No: BNKS/NCB/Works/01/2082-83",
+  "Invitation for Bids No: CA/NCB/Works/01/2082-83",
   "Teachers and Psychological Counsellor Wanted",
   "Scholarship Application Form for the A/Y, 2083",
   "Wanted Non-teaching staff",
@@ -50,7 +50,7 @@ export const NOTICE_COLUMN_TWO = [
   "Statistics Teacher Wanted",
   "Press Released",
   "INVITATION FOR BIDS",
-  "BNKS Contributes Rs. 14 Lakh to the Prime Minister's Disaster Relief Fund",
+  "CA Contributes Rs. 14 Lakh to the Prime Minister's Disaster Relief Fund",
 ];
 
 export const NOTICE_LABELS = [...NOTICE_COLUMN_ONE, ...NOTICE_COLUMN_TWO];

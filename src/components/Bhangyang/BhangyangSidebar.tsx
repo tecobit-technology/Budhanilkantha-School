@@ -99,7 +99,7 @@ export default function BhanjyangVol43Sidebar({
 }) {
   return (
     <div>
-      <h2 className="text-[24px] md:text-[26px] font-semibold text-[#16253d] mb-5">
+      <h2 className="ca-subheading mb-2">
         Bhanjyang Annual
       </h2>
 
